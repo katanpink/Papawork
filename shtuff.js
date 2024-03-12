@@ -1,14 +1,17 @@
 //question 1
 function celciusToFarenheit(t){
     let f = (t*1.8)+32
+    console.log(f)
     return f
 }
 
 //question 2
 function isLeapYear(y){
     if (!y%100 && y%4 || y%400){
+        console.log("true")
         return true
     } else {
+        console.log("false")
         return false
     }
 }
@@ -22,6 +25,7 @@ function isLeapYear(y){
             for (i=1;i <= n; i++) {
                 v *= i
             }
+            console.log(v)
             return v
         }
     }
@@ -29,13 +33,13 @@ function isLeapYear(y){
 //question 4
 function codespace(){
     for (i=1; i <= 100; i++){
-        if (i%3 && i%5){
+        if (i%3 == 0 && i%5 == 0){
             console.log('FizzBuzz')
         }
-        else if (i%3){
+        else if (i%3 == 0){
             console.log('Fizz')
         }
-        else if (i%5){
+        else if (i%5 == 0){
             console.log('Buzz')
         } else {
             console.log(i)
@@ -86,6 +90,15 @@ function groceryPrice(exp){
             console.log(exp + ' is not available right now')
     }
 }
+celciusToFarenheit(32)
+
+isLeapYear(2024)
+
+factorial(5)
+
+codespace()
+
+getNaturalSum(6)
 
 groceryPrice('Cookies')
 
